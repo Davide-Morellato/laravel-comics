@@ -1,5 +1,5 @@
 <div class="container m-50">
-    <div class="row">
+    <div class="row jc-center">
         <p>
             Piedini with &hearts;
         </p>
