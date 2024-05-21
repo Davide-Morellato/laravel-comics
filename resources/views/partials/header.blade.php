@@ -1,4 +1,4 @@
-<div class="container p-40">
+<div class="container p-30">
     <div class="row jc-center">
         <div>
             <img class="logo" src="/img/5184.png" alt="piedini">

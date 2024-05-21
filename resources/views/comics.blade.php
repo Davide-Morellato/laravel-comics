@@ -15,8 +15,12 @@
     <img class="cover" src="/img/greek-feet.jpg" alt="">
     <p>
         <strong>
-            Per tornare alla Homepage, clicca
-            <a href="{{route('home')}}"> qui </a>
+            Se vuoi lasciarmi......
+        </strong>
+    </p>
+    <p>
+        <strong> 
+            <a href="{{route('home')}}"> Non esitare </a>
         </strong>
     </p>
 </div>

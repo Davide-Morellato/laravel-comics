@@ -9,10 +9,11 @@
 <div>
     <h1>HOME</h1>
 </div>
+
 <div>
     <p>
         <strong>
-            Leggi giù.....
+            Segui le briciole....
         </strong>
     </p>
 </div>
@@ -25,9 +26,9 @@
     </p>
     <p>
         <strong>
-            clicca
+            Prego, 
             <a href="{{route('comics')}}">
-                qui
+                accomodati
             </a>
         </strong>
     </p>

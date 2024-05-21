@@ -52,8 +52,8 @@
         display: flex;
     }
 
-    .p-40 {
-        padding: 40px;
+    .p-30 {
+        padding: 30px;
     }
 
     .m-50 {
