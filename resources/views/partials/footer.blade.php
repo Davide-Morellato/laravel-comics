@@ -1,7 +1,7 @@
-<div class="container m-50">
-    <div class="row jc-center">
+<div class="container plr-30">
+    <div class="row">
         <p>
-            Piedini with &hearts;
+            Comics with &hearts;
         </p>
     </div>
 </div>

@@ -7,7 +7,7 @@
 @section('content')
 
 <div>
-    <h1>HOME</h1>
+    <h1>WELCOME!</h1>
 </div>
 
 <div>
@@ -27,7 +27,7 @@
     <p>
         <strong>
             Prego, 
-            <a href="{{route('comics')}}">
+            <a class="text-decoration-none" href="{{route('comics')}}">
                 accomodati
             </a>
         </strong>

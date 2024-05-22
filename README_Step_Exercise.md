@@ -22,3 +22,22 @@
 
 9. Ho sostituito nel <title></title> del file app.blade.php, mediante il metodo @yield('title'), il nome della pagina da visualizzare nel browser, assegnando nei file home.blade.php & comics.blade.php il rispettivo sostituto con il metodo @section('title', 'nome_sostitutivo')
 [N.B. per le stringhe è possibile assegnare 2 parametri a @section(), dove il primo paramentro corrisponde al nome del segnaposto, in questo caso 'title', lo stesso nello @yeld(), il secondo parametro è il valore che andrà a sostituire il nome del segnaposto]
+
+10. DOPO AVER INSTALLATO IL PACK: composer require pacificdev/laravel_9_preset
+BOOTSTRAP: php artisan preset:ui bootstrap
+NODE_MODULES: npm install
+All'interno del file web.php, nella Route::get(...)->comics, ho creato una variabile per leggere l'array del file comics., inserito nella cartella CONFIG, tramite il metodo config('nome_file').
+
+Successivamente, affinchè potessi leggerne i valori nella pagina comics.blade.php, in view('...') ho assegnato come secondo parametro il metodo compact('nome_variabile')
+[MODO 2: come secondo parametro posso inserire un array ['key' => $variabile] (stessa di config)]
+
+11. Nel file app.blade.php prima del <title> ho sfruttato la direttiva @vite per collegarmi il file app.js [@vite('resources/js/app.js')]
+
+12. Ho applicato le classi bootstrap dove necessario & aggiunto altre classi creando poi dei fogli di stile scss nella cartella RESOURCES->SCSS->PARTIALS ed importandomi tutti questi file nel file generale app.scss (RESOURCES->SCSS) [@use './partials/nome_file';]
+
+13. Nel file comics.blade.php ho sfruttato il ciclo Foreach per ciclare l'array passato come parametro al metodo view nella Route::get->comics.
+    @foreach($array as $elemento) // @endforeach
+    (N.B. Per prendere i valori all'interno dell'array: $elemento['chiave'])
+
+14. Avendo salvato una cartella IMAGE nella cartella RESOURCES, nel file header.blade.php, per recuperare l'immagine del logo, è stato necessario usare il metodo Vite::asset(), che restituirà l'URL per una determinata risorsa:
+    [<img src="{{Vite::asset('resoruces/image/nome_file')}}" alt="..." />]
